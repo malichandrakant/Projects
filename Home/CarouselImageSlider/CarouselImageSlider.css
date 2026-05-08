@@ -1,0 +1,266 @@
+/* =========================
+   MAIN SLIDER
+========================= */
+
+.hero-slider {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   SLIDE WRAPPER
+========================= */
+
+.carousel-item-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 28px;
+    background: #0f0f0f;
+}
+
+/* =========================
+   CLICKABLE LINK
+========================= */
+
+.carousel-link {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transform: scale(1);
+    transition: transform 7s ease;
+}
+
+.carousel-item-wrapper:hover .carousel-image {
+    transform: scale(1.05);
+}
+
+/* =========================
+   DARK OVERLAY
+========================= */
+
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.75) 15%,
+            rgba(0, 0, 0, 0.35) 50%,
+            rgba(0, 0, 0, 0.15) 100%
+        );
+
+    z-index: 1;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 70px;
+
+    transform: translateY(-50%);
+
+    z-index: 3;
+
+    max-width: 520px;
+}
+
+/* =========================
+   TAG
+========================= */
+
+.carousel-tag {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    margin-bottom: 20px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 999px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.carousel-content h1 {
+    color: #ffffff;
+
+    font-size: 64px;
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.carousel-content p {
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.carousel-btn {
+    height: 54px;
+
+    padding: 0 34px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #ff2563,
+        #ff4d88
+    );
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 10px 25px rgba(255, 37, 99, 0.35);
+}
+
+.carousel-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 16px 30px rgba(255, 37, 99, 0.45);
+}
+
+/* =========================
+   ANT DESIGN DOTS
+========================= */
+
+.ant-carousel .slick-dots {
+    bottom: 25px;
+}
+
+.ant-carousel .slick-dots li button {
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background: #ff2563;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+    .carousel-item-wrapper {
+        height: 500px;
+    }
+
+    .carousel-content {
+        left: 40px;
+        max-width: 420px;
+    }
+
+    .carousel-content h1 {
+        font-size: 48px;
+    }
+
+    .carousel-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item-wrapper {
+        height: 420px;
+        border-radius: 22px;
+    }
+
+    .carousel-content {
+        left: 24px;
+        right: 24px;
+        max-width: 100%;
+    }
+
+    .carousel-content h1 {
+        font-size: 36px;
+    }
+
+    .carousel-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .carousel-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item-wrapper {
+        height: 360px;
+    }
+
+    .carousel-content {
+        top: auto;
+        bottom: 35px;
+        transform: none;
+    }
+
+    .carousel-content h1 {
+        font-size: 28px;
+    }
+
+    .carousel-tag {
+        font-size: 11px;
+        padding: 6px 14px;
+    }
+}

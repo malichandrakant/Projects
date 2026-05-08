@@ -1,0 +1,9 @@
+.edit-Perfume-image-wrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.edit-Perfume-image {
+    width: 200px;
+}

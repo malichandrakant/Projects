@@ -1,0 +1,104 @@
+.login-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.login-row {
+    margin-top: 20px;
+}
+
+.login-box {
+    background: #111111;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(220, 185, 130, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.auth-alert {
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+/* Form Styling Adjustment */
+.form-item {
+    margin-bottom: 24px !important;
+}
+
+.form-item label {
+    color: #F4EADE !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px !important;
+}
+
+.login-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.forgot-link {
+    color: #8C8885;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.forgot-link:hover {
+    color: #C69B3C;
+}
+
+/* Social Login Section */
+.social-box {
+    padding: 0 20px;
+}
+
+.social-divider {
+    border-top-color: rgba(220, 185, 130, 0.15) !important;
+    margin-bottom: 30px !important;
+}
+
+.divider-text {
+    color: #8C8885;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.social-login-wrapper {
+    width: 100%;
+}
+
+/* Button Customization for Login Page */
+.login-footer button {
+    background: #C69B3C !important;
+    border: none !important;
+    color: #0A0A0A !important;
+    font-weight: 700 !important;
+    height: 45px !important;
+    padding: 0 30px !important;
+    border-radius: 8px !important;
+    transition: transform 0.3s, background 0.3s !important;
+}
+
+.login-footer button:hover {
+    background: #D4AF37 !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 25px;
+    }
+    .login-footer {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .social-box {
+        padding: 0;
+        margin-top: 20px;
+    }
+}
