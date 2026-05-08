@@ -51,13 +51,14 @@ Frontend (React) → REST/GraphQL APIs → Spring Boot Backend → PostgreSQL Da
 ![Profile](./screenshots/profile_page.png)
 
 ### 📦 Order History Page
-![Orders](./screenshots/orders_history_page.png)
+![Orders](./screenshots/order_history_page.png)
 
 ### 💳 Checkout Page
 ![Checkout](./screenshots/payment_page.png)
 
 ### 👨‍💼 Admin Dashboard
 ![Admin](./screenshots/admin_management_page.png)
+
 ### 📊 Analytics Dashboard
 ![Analytics](./screenshots/dashboard_page.png)
 
